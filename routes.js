@@ -70,15 +70,15 @@ module.exports = [
     method: 'GET',
     path: '/',
     handler: internals.serveHomePage
-  },{
+  }, {
     method: 'GET',
     path: '/{param*}',
     handler: {
       directory: {
-            path: '.',
-            redirectToSlash: true,
-            index: true
-        }
+        path: '.',
+        redirectToSlash: true,
+        index: true
+      }
     }
   },
   {
